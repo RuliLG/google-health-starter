@@ -1,0 +1,21 @@
+# Secrets and health data must never be committed.
+client.json
+token.json
+client_secret*.json
+*.token.json
+.env
+.env.*
+!.env.example
+data/
+*.sqlite
+*.sqlite3
+*.db
+
+node_modules/
+dist/
+out/
+.DS_Store
+.claude/skills/*-workspace/
+
+# Personal onboarding profile (goals, preferences): local only
+me/

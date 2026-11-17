@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+/* Design tokens. Change these to restyle the whole app. */
+@theme {
+  --color-bg: #f6f7f9;
+  --color-surface: #ffffff;
+  --color-surface-2: #f0f2f5;
+  --color-border: #e3e6eb;
+  --color-text: #12151a;
+  --color-muted: #667085;
+  --color-accent: #0f9d76;
+  --color-accent-soft: #d8f3ea;
+  --color-warn: #b45309;
+  --color-warn-soft: #fdf0dc;
+  --color-danger: #c2410c;
+  --color-sleep-deep: #3b4fd8;
+  --color-sleep-light: #8ea2ff;
+  --color-sleep-rem: #19a7c9;
+  --color-sleep-awake: #f2a23a;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "SF Pro Text", "Segoe UI", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0b0d10;
+    --color-surface: #13161b;
+    --color-surface-2: #1a1e25;
+    --color-border: #262b33;
+    --color-text: #eef1f5;
+    --color-muted: #8b94a3;
+    --color-accent: #34d399;
+    --color-accent-soft: #10392d;
+    --color-warn: #fbbf24;
+    --color-warn-soft: #3a2a0b;
+    --color-danger: #fb923c;
+  }
+}
+
+html, body, #root { height: 100%; }
+body { background: var(--color-bg); color: var(--color-text); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+.drag { -webkit-app-region: drag; }
+.no-drag { -webkit-app-region: no-drag; }
+.tabular { font-variant-numeric: tabular-nums; }
